@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-header text-center">
+        <h4>To Be Devoured</h4>
+    </div>
+    <div class="card-body">
+
+        {{#each undevouredList}}
+        <div>
+            <p>{{id}}.) {{burger_name}}
+                <button class="btn btn-sm btn-danger m-1 devour float-right" data-burger="{{id}}">Devour it!</button>
+            </p>
+        </div>
+        {{/each }}
+
+    </div>
+</div>

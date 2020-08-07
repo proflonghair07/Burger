@@ -1,0 +1,21 @@
+* {
+  color: #27251f;
+}
+
+body {
+  background-color: #0033a0;
+}
+
+.jumbotron {
+  background-color: #da291c;
+}
+
+.card-header {
+  background-color: #da291c;
+  border: 2px solid #da291c;
+}
+
+.card-body {
+  background-color: #ffc72c;
+  border: 2px solid #da291c;
+}

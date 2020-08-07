@@ -1,0 +1,29 @@
+<div class="jumbotron text-center container-fluid">
+    <h1 class="text-center"><img src="/assets/img/hamburger.png" height="80" class="d-inline-block align-top mx-auto"
+            alt=""> Eat Da Burger!!
+    </h1>
+
+</div>
+
+<div class="container my-5">
+
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Burger Name" aria-label="Burger Name"
+                    id="burgerName">
+                <div class="input-group-append">
+                    <button class="btn btn-danger" type="button" id="addBurger">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {{> uneaten-burger }}
+        </div>
+        <div class="col">
+            {{> burger-list }}
+        </div>
+    </div>
+</div>
