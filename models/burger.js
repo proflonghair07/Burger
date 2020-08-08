@@ -8,7 +8,7 @@ function Burger(name) {
 Burger.selectBurgers = function () {
   return new Promise((resolve, reject) => {
     orm
-      .selectAll("BURGERS")
+      .selectAll("burgers")
       .then((results) => {
         resolve(results);
       })
@@ -21,7 +21,7 @@ Burger.selectBurgers = function () {
 Burger.create = function (burger) {
   return new Promise((resolve, reject) => {
     orm
-      .insertOne("BURGERS", {
+      .insertOne("burgers", {
         burger_name: burger.name,
         devoured: burger.devoured,
       })
@@ -39,7 +39,7 @@ Burger.create = function (burger) {
 Burger.updateDevoured = function (burgerId) {
   return new Promise((resolve, reject) => {
     orm
-      .updateOne("BURGERS", "DEVOURED", true, "ID", burgerId)
+      .updateOne("burgers", "DEVOURED", true, "ID", burgerId)
       .then((results) => {
         resolve(results);
       })
